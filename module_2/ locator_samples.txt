@@ -1,0 +1,10 @@
+1 поле для ввода - css-селектор, поиск по ID
+input#name
+2 поле для ввода - xpath-селектор, поиск по name
+//input[@name="Last_name"]
+3 поле для ввода - css-селектор, поиск по class
+input.form-control.third
+4 поле для ввода - xpath-селектор, поиск по вашему собственному атрибуту
+//input[@test_attr="phone"]
+5 поле для ввода - xpath-селектор, поиск по class
+//input[@class="form-control second"]
