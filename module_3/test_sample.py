@@ -16,9 +16,7 @@ login_btn = 'login_submit'
 def test_registration_user():
     fake = Faker()
     email = fake.email()
-    print(email)
     password = fake.password()
-    print(password)
     search_text = 'Спасибо за регистрацию!'
 
     browser = webdriver.Chrome()
@@ -40,6 +38,7 @@ def test_registration_user():
         success_registration_msg = browser.find_element_by_css_selector(msg_locator).text
         assert success_registration_msg == search_text, \
             "Should be message after successful registration"
+        browser.save_screenshot("screenshot_registration.png")
 
     finally:
         browser.quit()
@@ -66,10 +65,11 @@ def test_login_user():
         success_login_msg = browser.find_element_by_css_selector(msg_locator).text
         assert success_login_msg == search_text, \
             "Should be message after successful login"
+        browser.save_screenshot("screenshot_login.png")
 
     finally:
         browser.quit()
 
 
-# test_registration_user()
+test_registration_user()
 test_login_user()
