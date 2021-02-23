@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 import math
 
+
 e = math.e
 
 
