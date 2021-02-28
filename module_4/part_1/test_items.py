@@ -2,24 +2,27 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# Data
+add_to_basket_locator = "button.btn.btn-lg.btn-primary.btn-add-to-basket"
+link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+dict_of_languages = {
+    "ru": "Добавить в корзину",
+    "fr": "Ajouter au panier",
+    "en-GB": "Add to basket",
+    "es": "Añadir al carrito"
+}
 
-def test_language_verification(browser):
-    link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+
+def test_language_verification(browser,language):
+    # Arrange
     browser.get(link)
 
-    btn = WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "button.btn.btn-lg.btn-primary.btn-add-to-basket")))
-    string = browser.current_url
-    lang = string.split('/')[3]
+    # Act
+    add_to_basket_btn = WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.CSS_SELECTOR, add_to_basket_locator)))
 
-    if lang == 'ru':
-        assert btn.text == 'Добавить в корзину', "Invalid name of button!"
-    elif lang == 'fr':
-        assert btn.text == 'Ajouter au panier', "Invalid name of button!"
-    elif lang == 'en-GB':
-        assert btn.text == 'Add to basket', "Invalid name of button!"
-    elif lang == 'es':
-        assert btn.text == 'Añadir al carrito', "Invalid name of button!"
-    else:
-        print('invalid language')
+    # Assert
+    assert add_to_basket_btn.text == dict_of_languages[language], "Invalid name of button!"
+
+
 
 
