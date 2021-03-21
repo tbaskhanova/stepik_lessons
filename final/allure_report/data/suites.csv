@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Mar 21 17:47:40 YEKT 2021","Sun Mar 21 17:47:43 YEKT 2021","3361","","test_main_page","TestMainPage","","","test_guest_can_go_to_review_form[1]",""
+"passed","Sun Mar 21 17:48:35 YEKT 2021","Sun Mar 21 17:48:38 YEKT 2021","3258","","test_main_page","TestUserFindProduct","","","test_user_can_find_available_product",""
+"skipped","Sun Mar 21 17:48:17 YEKT 2021","Sun Mar 21 17:48:22 YEKT 2021","4768","","test_main_page","TestMainPage","","","test_guest_cant_find_available_product",""
+"passed","Sun Mar 21 17:48:08 YEKT 2021","Sun Mar 21 17:48:13 YEKT 2021","4895","","test_main_page","TestMainPage","","","test_guest_can_find_available_product",""
+"passed","Sun Mar 21 17:47:57 YEKT 2021","Sun Mar 21 17:48:02 YEKT 2021","4873","","test_main_page","TestMainPage","","","test_guest_can_go_to_previous_page_in_catalogue",""
+"passed","Sun Mar 21 17:47:48 YEKT 2021","Sun Mar 21 17:47:52 YEKT 2021","4244","","test_main_page","TestMainPage","","","test_guest_can_go_to_review_form[2]",""

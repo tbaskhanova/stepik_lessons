@@ -1,0 +1,136 @@
+{
+  "uid" : "ceccab0d512d0116",
+  "name" : "test_guest_cant_find_available_product",
+  "fullName" : "test_main_page.TestMainPage#test_guest_cant_find_available_product",
+  "historyId" : "ef92f5cd056fafd42666c63335a2ad1b",
+  "time" : {
+    "start" : 1616330897522,
+    "stop" : 1616330902290,
+    "duration" : 4768
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL negative test\n\nAssertionError: The message is not correct!",
+  "statusTrace" : "self = <final.test_main_page.TestMainPage object at 0x03F077A8>, browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"747d240a7df0c03ea78fe32b594e4b91\")>\n\n    @pytest.mark.xfail(reason=\"negative test\")\n    def test_guest_cant_find_available_product(self, browser):\n        # Data\n        link = \"http://selenium1py.pythonanywhere.com/catalogue/\"\n    \n        # Arrange\n        page = MainPage(browser, link)\n        page.open()\n        product_name = browser.find_element(*MainPageLocators.PRODUCT_NAME).text\n    \n        # Act\n        page.find_product_by_name(product_name)\n    \n        # Assert\n>       page.should_be_unsuccess_msg()\n\ntest_main_page.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <final.pages.main_page.MainPage object at 0x03CBCE20>\n\n    def should_be_unsuccess_msg(self):\n        msg = 'Found 0 results'\n        self.is_element_present(*MainPageLocators.UNSUCCESS_MSG_LOC), \"Message is not presented\"\n        unsuccess_msg = self.browser.find_element(*MainPageLocators.UNSUCCESS_MSG_LOC).text\n>       assert msg in unsuccess_msg, 'The message is not correct!'\nE       AssertionError: The message is not correct!\n\npages\\main_page.py:32: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "language",
+    "time" : {
+      "start" : 1616330895891,
+      "stop" : 1616330895891,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1616330855854,
+      "stop" : 1616330856418,
+      "duration" : 564
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1616330895891,
+      "stop" : 1616330897521,
+      "duration" : 1630
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "XFAIL negative test\n\nAssertionError: The message is not correct!",
+    "statusTrace" : "self = <final.test_main_page.TestMainPage object at 0x03F077A8>, browser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"747d240a7df0c03ea78fe32b594e4b91\")>\n\n    @pytest.mark.xfail(reason=\"negative test\")\n    def test_guest_cant_find_available_product(self, browser):\n        # Data\n        link = \"http://selenium1py.pythonanywhere.com/catalogue/\"\n    \n        # Arrange\n        page = MainPage(browser, link)\n        page.open()\n        product_name = browser.find_element(*MainPageLocators.PRODUCT_NAME).text\n    \n        # Act\n        page.find_product_by_name(product_name)\n    \n        # Assert\n>       page.should_be_unsuccess_msg()\n\ntest_main_page.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <final.pages.main_page.MainPage object at 0x03CBCE20>\n\n    def should_be_unsuccess_msg(self):\n        msg = 'Found 0 results'\n        self.is_element_present(*MainPageLocators.UNSUCCESS_MSG_LOC), \"Message is not presented\"\n        unsuccess_msg = self.browser.find_element(*MainPageLocators.UNSUCCESS_MSG_LOC).text\n>       assert msg in unsuccess_msg, 'The message is not correct!'\nE       AssertionError: The message is not correct!\n\npages\\main_page.py:32: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3d94d882e908a72e",
+      "name" : "stdout",
+      "source" : "3d94d882e908a72e.txt",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1616330902993,
+      "stop" : 1616330905163,
+      "duration" : 2170
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail(reason='negative test')"
+  }, {
+    "name" : "suite",
+    "value" : "test_main_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMainPage"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-0CMPFR3"
+  }, {
+    "name" : "thread",
+    "value" : "22544-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail(reason='negative test')" ]
+  },
+  "source" : "ceccab0d512d0116.json",
+  "parameterValues" : [ ]
+}

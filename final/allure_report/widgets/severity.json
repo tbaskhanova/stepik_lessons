@@ -1,0 +1,61 @@
+[ {
+  "uid" : "3845811bfc087169",
+  "name" : "test_user_can_find_available_product",
+  "time" : {
+    "start" : 1616330915527,
+    "stop" : 1616330918785,
+    "duration" : 3258
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62f5479aedaec071",
+  "name" : "test_guest_can_go_to_previous_page_in_catalogue",
+  "time" : {
+    "start" : 1616330877685,
+    "stop" : 1616330882558,
+    "duration" : 4873
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8bf2028743a35b8",
+  "name" : "test_guest_can_go_to_review_form[2]",
+  "time" : {
+    "start" : 1616330868568,
+    "stop" : 1616330872812,
+    "duration" : 4244
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f96ff32c46230b4c",
+  "name" : "test_guest_can_find_available_product",
+  "time" : {
+    "start" : 1616330888577,
+    "stop" : 1616330893472,
+    "duration" : 4895
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c240e3f036d389a",
+  "name" : "test_guest_can_go_to_review_form[1]",
+  "time" : {
+    "start" : 1616330860171,
+    "stop" : 1616330863532,
+    "duration" : 3361
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ceccab0d512d0116",
+  "name" : "test_guest_cant_find_available_product",
+  "time" : {
+    "start" : 1616330897522,
+    "stop" : 1616330902290,
+    "duration" : 4768
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]
