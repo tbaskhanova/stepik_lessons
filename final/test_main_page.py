@@ -6,6 +6,7 @@ import pytest
 from faker import Faker
 
 
+@pytest.mark.personal_tests
 class TestMainPage:
     @pytest.mark.parametrize('page', ["1", "2"])
     def test_guest_can_go_to_review_form(self, browser, page):
@@ -74,6 +75,7 @@ class TestMainPage:
         page.should_be_unsuccess_msg()
 
 
+@pytest.mark.personal_tests
 class TestUserFindProduct:
     # Arrange
     @pytest.fixture(scope="function", autouse=True)
